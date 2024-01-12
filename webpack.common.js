@@ -9,4 +9,12 @@ module.exports = {
     clean: true,
     filename: './js/app.js',
   },
+  module: {
+    rules: [
+      {
+        use: ["style-loader", 'css-loader', 'sass-loader'],
+        test: /.(css|sass|scss)$/
+      }
+    ]
+  }
 };
